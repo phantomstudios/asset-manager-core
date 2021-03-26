@@ -1,4 +1,4 @@
-import { AssetManager } from "../src";
+import AssetManager from "../src";
 import SampleAsset from "../src/mocks/SampleAsset";
 
 describe("performs requests", () => {

@@ -1,22 +1,22 @@
 {
   "name": "@asset-manager/core",
-  "description": "Description, same as overview one-liner from README.md.",
+  "description": "A singleton for loading and retrieving assets used in your application.",
   "version": "0.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "homepage": "https://github.com/phantomstudios/PACKAGE-NAME#readme",
+  "homepage": "https://github.com/phantomstudios/asset-manager-core#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phantomstudios/PACKAGE-NAME.git"
+    "url": "https://github.com/phantomstudios/asset-manager-core.git"
   },
   "bugs": {
-    "url": "https://github.com/phantomstudios/PACKAGE-NAME/issues"
+    "url": "https://github.com/phantomstudios/asset-manager-core/issues"
   },
   "keywords": [
-    "react",
-    "hooks",
-    "hook",
-    "react-hook"
+    "javascript",
+    "loader",
+    "singleton",
+    "assets"
   ],
   "scripts": {
     "build": "tsc",
