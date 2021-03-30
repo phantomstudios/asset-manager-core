@@ -107,5 +107,5 @@ const SomeExample2 = () = {
 [npm-url]: https://npmjs.org/package/@asset-manager/core
 [npm-downloads-image]: https://img.shields.io/npm/dm/@asset-manager/core.svg
 [npm-downloads-url]: https://npmcharts.com/compare/@asset-manager/core?minimal=true
-[ci-image]: https://github.com/phantomstudios/PACKAGE-NAME/workflows/Test/badge.svg
-[ci-url]: https://github.com/phantomstudios/PACKAGE-NAME/actions
+[ci-image]: https://github.com/phantomstudios/asset-manager-core/workflows/Test/badge.svg
+[ci-url]: https://github.com/phantomstudios/asset-manager-core/actions
