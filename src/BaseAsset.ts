@@ -25,6 +25,7 @@ abstract class Asset {
   }
 
   protected onProgressChange(value: number) {
+    if (this.progress === value) return;
     this.progress = value;
     this.onProgress.next(this.progress);
   }

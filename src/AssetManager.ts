@@ -51,7 +51,6 @@ class AssetManager {
         queue.add(() => {
           return new Promise((resolve) => {
             asset.onLoaded.subscribe(() => {
-              this.handleAssetPreloaded();
               resolve(asset);
             });
             asset.onProgress.subscribe(() => {
