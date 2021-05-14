@@ -101,9 +101,7 @@ class AssetManager {
 
   get<T extends Asset>(id: assetId) {
     const item = this.cache.find((c) => c.id === id);
-
     if (!item) throw new Error(`Invalid File: ${id}`);
-
     return item.asset as T;
   }
 }
