@@ -1,7 +1,7 @@
 {
   "name": "@asset-manager/core",
   "description": "A singleton for loading and retrieving assets used in your application.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "homepage": "https://github.com/phantomstudios/asset-manager-core#readme",
