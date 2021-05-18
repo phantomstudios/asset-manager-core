@@ -4,7 +4,8 @@
 [![Actions Status][ci-image]][ci-url]
 [![PR Welcome][npm-downloads-image]][npm-downloads-url]
 
-Package one-liner overview.
+This package provides a simple solution for preloading various type of assets and fetching
+them through a singleton class.
 
 ## Introduction
 
