@@ -57,6 +57,6 @@
   },
   "dependencies": {
     "p-queue": "^6.6.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^7.0.0"
   }
 }

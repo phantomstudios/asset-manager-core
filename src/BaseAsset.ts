@@ -33,7 +33,7 @@ abstract class Asset {
   protected onLoadComplete() {
     this.state = AssetState.Loaded;
     this.onProgressChange(1);
-    this.onLoaded.next();
+    this.onLoaded.next(undefined);
   }
 }
 
