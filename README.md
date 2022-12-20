@@ -25,7 +25,7 @@ manager.setLoaders({
 manager.setAssets([
   {
     id: "splash",
-    type: "audio",
+    type: "audioBuffer",
     url: "splash.mp3",
     preload: true,
   },
