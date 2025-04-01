@@ -34,7 +34,7 @@
     "fix:format": "prettier \"**/*.{md,html,yaml,yml}\" --write",
     "depcheck": "npx npm-check --update"
   },
-  "author": "John Chipps-Harding (john.chipps-harding@phntms.com)",
+  "author": "Josua Pedersen (josua@phantom.agency)",
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.14.2",
