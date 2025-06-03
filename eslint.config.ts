@@ -1,10 +1,12 @@
-const eslint = require('@eslint/js');
-const globals = require('globals');
-const tseslint = require('typescript-eslint');
-const prettierConfig = require('eslint-config-prettier');
-const importPlugin = require('eslint-plugin-import');
+import eslint from '@eslint/js';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+import prettierConfig from 'eslint-config-prettier';
+import * as importPlugin from 'eslint-plugin-import';
+// @ts-ignore - No types available for this module
+import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
-module.exports = tseslint.config(
+export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   prettierConfig,
@@ -45,8 +47,5 @@ module.exports = tseslint.config(
       ]
     }
   },
-  {
-    files: ['**/*.{js,jsx,ts,tsx}'],
-    extends: [require('eslint-plugin-prettier/recommended')]
-  }
+  prettierRecommended
 );
