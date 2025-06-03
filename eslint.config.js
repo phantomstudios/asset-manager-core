@@ -1,39 +1,26 @@
-// @ts-check
 const eslint = require('@eslint/js');
 const globals = require('globals');
-const tseslint = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-const prettierPlugin = require('eslint-plugin-prettier');
+const tseslint = require('typescript-eslint');
 const prettierConfig = require('eslint-config-prettier');
 const importPlugin = require('eslint-plugin-import');
 
-module.exports = [
+module.exports = tseslint.config(
   eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  prettierConfig,
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        jsx: false,
-        useJSXTextNode: true,
-        ecmaVersion: 'latest',
-        sourceType: 'module'
-      },
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.es6,
         ...globals.jest
       }
     },
     plugins: {
-      '@typescript-eslint': tseslint,
-      'prettier': prettierPlugin,
       'import': importPlugin
     },
     rules: {
-      ...tseslint.configs.recommended.rules,
-      ...prettierConfig.rules,
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
@@ -55,8 +42,11 @@ module.exports = [
             caseInsensitive: true
           }
         }
-      ],
-      'prettier/prettier': 'error'
+      ]
     }
+  },
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    extends: [require('eslint-plugin-prettier/recommended')]
   }
-];
+);
