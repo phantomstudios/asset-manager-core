@@ -81,7 +81,7 @@ class AssetManager {
         }
         return memo;
       },
-      { toLoad: 0, loaded: 0 }
+      { toLoad: 0, loaded: 0 },
     );
 
     // If no assets to preload its finished preloading, or calculate the progress
