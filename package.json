@@ -59,7 +59,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "p-queue": "^6.6.2",
+    "p-queue": "^9.0.1",
     "rxjs": "^6.6.6"
   }
 }
