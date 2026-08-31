@@ -13,26 +13,26 @@ Loading and retrieving assets.
 
 ```typescript
 import AssetManager from "@asset-manager/core";
-import { AudioPlayer } from "@asset-manager/tone";
+import { AudioBufferLoader } from "@asset-manager/audio";
 
 // Get an instance to the manager and set the loaders
 const manager = AssetManager.getInstance();
 manager.setLoaders({
-  audio: AudioPlayer,
+  audioBuffer: AudioBufferLoader,
 });
 
 // Set the assets to load
 manager.setAssets([
   {
     id: "splash",
-    type: "audio",
+    type: "audioBuffer",
     url: "splash.mp3",
     preload: true,
   },
 ]);
 
 // Elsewhere in your app you can grab assets from the manager
-const player = AssetManager.getInstance().get<AudioPlayer>("splash");
+const buffer = AssetManager.getInstance().get<AudioBufferLoader>("splash");
 ```
 
 ## Installation
@@ -47,6 +47,7 @@ The core asset manager does not include any 'loaders'. You may want to load an o
 
 ```bash
 npm i @asset-manager/three
+npm i @asset-manager/audio
 ```
 
 [npm-image]: https://img.shields.io/npm/v/@asset-manager/core.svg?style=flat-square&logo=react
